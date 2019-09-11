@@ -154,7 +154,7 @@
     
     ```
     
-    编译通过，但是运行提示错误。此处是由于有一插件未自动拷贝所致。在所创建的 anaconda 环境的 plugins 下找到 platforms 插件复制到 s1-CreateADialog\build\RelWithDebInfo  路径下即可成功运行。运行结果如下，点击按钮，即可输出 Hello World 。
+    编译通过，运行结果如下，点击按钮，即可输出 Hello World 。   
   ![dialogresult](images/dialogresult.PNG)<br>
 
 
@@ -247,7 +247,7 @@
     adjustSize();
     //使点击按钮后输出1+2的值
     ```
-  - 将缺少的platform插件放入对应位置后即可调试得到正确结果。至此，创建库文件完成。<br>
+  - 调试得到正确结果。至此，创建库文件完成。<br>
 ![libresult](images/libresult.PNG)
 
 - 查找第三方库
@@ -278,9 +278,9 @@
       }
 
     ```
-  - 运行 build.bat ,对项目进行编译，得到对应的 sln 。生成并添加缺少的插件后，即可成功运行。至此查找第三方库完成。
+  - 运行 build.bat ,对项目进行编译，得到对应的 sln ，调试即可成功运行。至此查找第三方库完成。
 
-- TODO: 修改 ```h2o.cmake applocal.ps1 qtdeploy.ps1``` 等文件，使自动编译可以支持对 qt plugin 的拷贝，目录结构为 ```plugins/platforms``` 等等，参考[vcpkg](https://github.com/microsoft/vcpkg/blob/master/scripts/buildsystems/vcpkg.cmake)
+
 
 ## OSketch 开发教程
 - 下载[插件源码和SDK](https://pan.baidu.com/s/162Q3eNI88vPPnic_o8icpA)
